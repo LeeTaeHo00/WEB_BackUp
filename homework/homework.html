@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *
+    {
+      margin: 0;
+      padding: 0;
+    }
+ 
+    .main
+    {
+      display: flex;
+      height: 500px;
+      background-color:lightgreen;
+    }
+
+    .header
+    {
+      height:10%;
+      background-color: orange;
+      text-align: center;
+      color: white;
+      
+      line-height:300%;
+    } 
+
+    section
+    {
+      border: 1px solid purple;
+      background-color: purple;
+      width: 80%;
+      height: 5%;
+      
+    }
+
+    .nav
+    {
+      background-color: blue;
+      line-height: 200%;
+    }
+
+    .navElement
+    {
+      color: white;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .aside
+    {
+      flex-direction: row;
+      background-color: red;
+      width: 100px;
+    }
+
+    footer
+    {
+      background-color: black;
+      color :white;
+      height: 50px;
+    }
+
+    .divOut
+    {
+      display: flex;
+      flex-direction:column;
+      width: 80%;
+      height: 80%;
+    }
+
+    .divIn
+    {
+      flex:1;
+      border: 1px solid purple;
+      background-color: purple;
+      padding:10%;
+      margin: 10%;
+    }
+  </style>
+</head>
+<body>
+  <header class = "header">
+    <h1>header</h1>
+  </header>
+
+  <nav class ="nav">
+    <span class = "navElement"> 메뉴1 </span>
+    <span class = "navElement"> 메뉴2 </span>
+    <span class = "navElement"> 메뉴3 </span>
+  </nav>
+
+  <main class = "main">
+    <aside class = "aside">
+      <div> aside </div>
+    </aside>
+
+    <div class = "divOut">
+      <div class = "divIn">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+      <div class = "divIn">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div> footer </div>
+  </footer>
+
+  
+</body>
+</html>
