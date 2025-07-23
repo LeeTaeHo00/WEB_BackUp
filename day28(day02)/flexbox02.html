@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+
+    *
+    {
+      margin: 0;
+      padding: 0;
+    }
+ 
+    .main
+    {
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .header, .footer
+    {
+      height:100px;
+      background-color: red;
+    } 
+
+    .section-container
+    {
+      flex:1;
+      height:500px;
+      display: flex;
+    }
+
+    .aside
+    {
+      width: 150px;;
+      background-color:aqua;
+      text-align: center;
+      line-height: 300px;
+      font-size: 129px;
+      font-weight: bold;
+    }
+    .section
+    {
+      flex:1;
+      background-color: blueviolet;  
+      text-align: center;  
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="header">header</div>
+    <!-- header, footer 높이 : 100px 
+     main 높이 : 500px, aside 너비 : 150px 나머지 section-->
+    <div class="section-container">
+      <div class="aside">asidee</div>
+      <div class="section">section</div>
+    </div>
+    <div class="footer">footer</div>
+  </div>
+</body>
+</html>
