@@ -14,7 +14,7 @@
     .main
     {
       display: flex;
-      height: 500px;
+      height: 800px;
       background-color:lightgreen;
     }
 
@@ -28,15 +28,6 @@
       line-height:300%;
     } 
 
-    section
-    {
-      border: 1px solid purple;
-      background-color: purple;
-      width: 80%;
-      height: 5%;
-      
-    }
-
     .nav
     {
       background-color: blue;
@@ -46,39 +37,77 @@
     .navElement
     {
       color: white;
-      margin: 10px;
-      padding: 10px;
+      margin: 20px;
+      padding: 20px;
     }
 
     .aside
     {
       flex-direction: row;
       background-color: red;
-      width: 100px;
+      width: 10%;
+      line-height: 700px;
+      text-align: center;
+      color:white;
     }
 
     footer
     {
       background-color: black;
       color :white;
-      height: 50px;
+      height: 10%;
+      line-height:300%;
     }
 
     .divOut
     {
       display: flex;
       flex-direction:column;
-      width: 80%;
-      height: 80%;
+      width:40%;
+      height:65%;
+      color:white;
+      padding-left: 25%;
+      padding-top: 10%;
     }
 
-    .divIn
+    .divIn1
     {
-      flex:1;
+      flex: 1;
       border: 1px solid purple;
       background-color: purple;
-      padding:10%;
-      margin: 10%;
+      margin: 10px;
+    }
+
+    .divIn2
+    {
+      flex: 1;
+      border: 1px solid purple;
+      background-color: purple;
+      margin: 10px;
+    }
+
+    .divElement
+    {
+      border: 1px solid cyan;
+      background-color: cyan;
+      display: inline-block;
+      height: 40%;
+      width: 25%;
+      text-align: center;
+      line-height: 600%;
+      margin: 5px;
+    }
+
+    .divElement2
+    {
+      border: 1px solid cyan;
+      background-color: cyan;
+      display: inline-block;
+      height: 55%;
+      width: 45%;
+      text-align: center;
+      line-height: 600%;
+      margin: 7px;
     }
   </style>
 </head>
@@ -95,20 +124,27 @@
 
   <main class = "main">
     <aside class = "aside">
-      <div> aside </div>
+      <h1> aside </h1>
     </aside>
 
     <div class = "divOut">
-      <div class = "divIn">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
-      <div class = "divIn">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-      </div>
+      <section class = "divIn1">
+        <h2>Section</h2>
+        <span class = "divElement">article</span>
+        <span class = "divElement">article</span>
+        <span class = "divElement">article</span>
+      </section>
+      <section class = "divIn2">
+        <h2>Section</h2>
+        <div>
+          <span class = "divElement2">article</span>
+          <span class = "divElement2">article</span>
+        </div>
+        <div>
+          <span class = "divElement2">article</span>
+          <span class = "divElement2">article</span>
+        </div>
+      </section>
     </div>
   </main>
 
